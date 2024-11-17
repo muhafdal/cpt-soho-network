@@ -67,34 +67,41 @@ Each VLAN gets 7 interfaces:
 ![1](https://github.com/user-attachments/assets/8c88b27d-ac9f-4387-91de-0d17b7d13993)  
 ### Set VLAN  
 - vlan (number) - Creates a new VLAN with the specified number  
-> Example: vlan 10 creates VLAN 10  
+    Example: `vlan 10`creates VLAN 10  
 - name (vlan name) - Assigns a name to the newly created VLAN  
-> Example: name Admin/IT assigns the name "Admin/IT" to VLAN 10  
+    Example: `name Admin/IT` assigns the name "Admin/IT" to VLAN 10  
 - int range f0/..-.. - Enters interface configuration mode for a range of interfaces  
-> Example: int range f0/2-8 configures interfaces FastEthernet 0/2 through 0/8  
-- switchport mode access - Configures the interface to operate in access mode  
-> This sets the port to carry traffic for only one VLAN  
+    Example: `int range f0/2-8` configures interfaces FastEthernet 0/2 through 0/8  
+- `switchport mode access` - Configures the interface to operate in access mode  
+    This sets the port to carry traffic for only one VLAN  
 - switchport access vlan (vlan number) - Assigns the interface to a specific VLAN in access mode  
-> Example: switchport access vlan 10 assigns the interface to VLAN 10  
-- int f0/1 - Enters the configuration mode for interface FastEthernet 0/1  
-- switchport mode trunk - Configures the interface to operate in trunk mode  
-- A trunk port can carry traffic for multiple VLANs, typically used between switches  
-
-
+    Example: `switchport access vlan 10` assigns the interface to VLAN 10  
+- `int f0/1` - Enters the configuration mode for interface FastEthernet 0/1  
+- `switchport mode trunk` - Configures the interface to operate in trunk mode  
+    A trunk port can carry traffic for multiple VLANs, typically used between switches  
 
 ![2](https://github.com/user-attachments/assets/c1e6cba1-6f5b-4fe5-9bb0-5709dd2d9499)  
-### Enable interfaces Gig0/0 and Gig0/1
+### Enable interfaces Gig0/0  
 ![3](https://github.com/user-attachments/assets/53645f5b-e9a7-41ca-9ae0-bbfb3ada7ca0)  
-![4](https://github.com/user-attachments/assets/d328862b-bc76-4bb8-b6fb-44025f47383d)  
+### Configure subinterfaces on the router for VLANs 10, 20, and 30  
 ![5](https://github.com/user-attachments/assets/5bf39612-b534-4710-bf1c-1ac5c7c2a4ed)  
+### Configure the DHCP pool for all VLANs  
 ![6](https://github.com/user-attachments/assets/3d1ffaae-3d69-4c47-b9fe-49b3e2c47e02)  
+### Set all PCs to DHCP, like this  
 ![7](https://github.com/user-attachments/assets/5ba31b48-8c59-408e-807a-733c4b0deeae)  
+### Set all printers to DHCP, like this  
 ![8](https://github.com/user-attachments/assets/bb9b0ae0-3552-4f15-9969-65c1627f794b)  
 ![9](https://github.com/user-attachments/assets/aafe10f7-f3ff-417b-bb4c-5d03a0bdb650)  
+### For the access point, set the SSID to be the same as the VLAN name. For example, the SSID for VLAN Admin/IT  
 ![10](https://github.com/user-attachments/assets/8e7d9d36-8d52-424f-8217-2cdb7227a9f3)  
+### Set the wireless on all smartphones to connect to the SSID and password for each VLAN. For example, the SSID from the access point named 'Admin/IT'  
 ![11](https://github.com/user-attachments/assets/0164e10b-f38b-470b-86c5-e62c2b75aecf)  
+### Remove the Fast Ethernet module from the laptop  
 ![12](https://github.com/user-attachments/assets/a47b8c51-f491-4856-afaa-6aebd3a970e9)  
 ![13](https://github.com/user-attachments/assets/5e7eeb98-d9f8-4789-816e-1827bcb4d185)  
+and replace it with the WPC300N module for wireless  
 ![14](https://github.com/user-attachments/assets/e4ce0e8c-ba7c-4f34-837f-65f30222719a)  
+### After that, set the wireless on all laptops to connect to the SSID and password for each VLAN. For example, the SSID from the access point named 'Admin/IT'  
 ![15](https://github.com/user-attachments/assets/f8185b9a-acc5-4fc9-8f00-116d2345370e)  
+### Check the connections for all departments
 ![16](https://github.com/user-attachments/assets/1bb6cc59-3527-49e5-b4c8-36d9b23decf9)  
