@@ -103,5 +103,7 @@ and replace it with the WPC300N module for wireless
 ![14](https://github.com/user-attachments/assets/e4ce0e8c-ba7c-4f34-837f-65f30222719a)  
 ### After that, set the wireless on all laptops to connect to the SSID and password for each VLAN. For example, the SSID from the access point named 'Admin/IT'  
 ![15](https://github.com/user-attachments/assets/f8185b9a-acc5-4fc9-8f00-116d2345370e)  
-### Check the connections for all departments
+### If all configurations are correct, it should look like this
+![Screenshot at 2024-11-17 22-08-18](https://github.com/user-attachments/assets/6dd28e3d-7cc6-487d-a877-536ccb589654)
+### Check the connections for all departments  
 ![16](https://github.com/user-attachments/assets/1bb6cc59-3527-49e5-b4c8-36d9b23decf9)  
