@@ -33,7 +33,7 @@ Subnets needed: 3
 
 ### Subnet Block:
 - 256-last decimal of subnet mask = Subnet Block  
-- 256-128 = 64  
+- 256-192 = 64  
 - Subnet Number = 0, 64, 128   
 
 ### 1st Subnet
